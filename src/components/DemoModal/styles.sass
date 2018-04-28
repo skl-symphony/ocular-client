@@ -18,7 +18,7 @@
     background: $modal-background
     max-width: 900px
     height: 85vh
-    width: 90vw
+    width: 75vw
     position: fixed
     top: 50%
     left: 50%
@@ -66,34 +66,46 @@
       overflow-y: auto
       padding: 2.5rem 1.5rem 0 1.5rem
       .itemPicWrapper
-        flex: 3
-        .img
+        flex: 6
+        padding: auto
+        canvas, video
           margin: auto
-          background: #eee
-          height: 9rem
-          width: 9rem
-          border-radius: 50%
-        .imgText
-          color: $black
-          font-weight: 500
-          font-size: .9rem
+          display: block
+        .actionBtnWrapper
+          display: block
+          margin: auto
           text-align: center
-          margin: 2rem 0
-          line-height: 1.5
-          padding: 0 10px
-          position: relative
-      .itemInfoWrapper
-        flex: 3
-        margin-top: 2rem
-        .inputWrapper
-      .itemDescription, .itemTags
-        padding: .5rem 1rem
-        resize: none
-        height: 8rem
-        box-sizing: border-box
-        width: 100% !important
-      .itemTags
-        margin-bottom: 2.5rem
+          padding: auto
+        .recordBtn, .snapshotBtn
+          display: inline-block
+          height: 50px
+          width: 50px
+          border-radius: 25px
+          font-size: 2rem
+          line-height: 25px
+          margin: 5px
+        .recordBtn
+          background: $black
+          color: #fff
+        .snapshotBtn
+          position: relative;
+          background: #fff
+          color: #000
+        .snapshotBtnCircle
+          position: absolute
+          width: 50%
+          height: 50%
+          background-color: #000000
+          border-radius: 50%
+        .snapshotBtnSmallCircle
+          margin-top: 25%
+          margin-left: 25%
+          position: absolute
+          width: 50%
+          height: 50%
+          background-color: #e5e5e5
+          border-radius: 50%
+
     .buttonWrapper
       display: flex
       z-index: 999

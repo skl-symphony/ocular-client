@@ -25,42 +25,6 @@ class Header extends Component {
       </button>
     );
 
-    this.homeMenu = (
-      <div className="menu">
-        <Link onlyActiveOnIndex={true} key={1} to="/browse" activeClassName="activeNavLink" className="navLink">
-          Demo
-        </Link>
-        <Link onlyActiveOnIndex={true} key={2} to="/account" activeClassName="activeNavLink" className="navLink">
-          Account
-        </Link>
-      </div>
-    );
-
-    this.shopDemoMenu = (
-      <div className="menu">
-        <Link onlyActiveOnIndex={true} key={1} to="/browse" activeClassName="activeNavLink" className="navLink">
-          Browse
-        </Link>
-        <Link onlyActiveOnIndex={true} key={2} to="/cart" activeClassName="activeNavLink" className="navLink">
-          Cart
-        </Link>
-        <Link onlyActiveOnIndex={true} key={3} to="/login" activeClassName="activeNavLink" className="navLink">
-          Login
-        </Link>
-      </div>
-    );
-
-    this.configureMenu = (
-      <div className="menu">
-        <Link onlyActiveOnIndex={true} key={1} to="/account" activeClassName="activeNavLink" className="navLink">
-          Account
-        </Link>
-        <Link onlyActiveOnIndex={true} key={2} to="/configure" activeClassName="activeNavLink" className="navLink">
-          Configure
-        </Link>
-      </div>
-    );
-
     this.loggedInMenu = (
       <div className="menu">
         <Link onlyActiveOnIndex={true} key={1} to="/browse" activeClassName="activeNavLink" className="navLink">

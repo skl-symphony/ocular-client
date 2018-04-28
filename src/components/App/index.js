@@ -6,6 +6,7 @@ import './styles.sass';
 import '../../styles/animation.sass';
 
 class App extends Component {
+
   render() {
     return (
       <div className="wrapper">
