@@ -10,12 +10,10 @@ class LandingPage extends Component {
   }
 
   render() {
+    const curlReq = "curl -XPOST -H 'Content-Type:application/json' 'https://ocular.herokuapp.com/render' -d'{\"image\":`${base64_encoded_image}`, \"model\":`${model_id}`}'";
     return (
-    	<div>
-        <h2>Augmented Reality made simple for eCommerce</h2>
-        <h5></h5>
-        <div></div>
-        <h3 className="error text-center">Landing Page</h3>
+  	  <div>
+        <h3 className="text-center error">Augmented Reality Made Simple for eCommerce</h3>
       </div>
     );
   }

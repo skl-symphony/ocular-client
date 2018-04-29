@@ -9,17 +9,35 @@ class ItemPage extends Component {
   constructor(props) {
     super(props);
     const itemsMap = {
-      "glasses": {
-        id: "glasses",
-        name: "Aviator Glasses",
+      "demo": {
+        id: "demo",
+        name: "Demo Glasses",
         cost: "$40.00",
+        description: "These glasses will absorb the disappointment on your parents' faces so you never have to acknowledge your inferiority complex."
+      },
+      "kanye": {
+        id: "kanye",
+        name: "Kanye Shades",
+        cost: "$340.00",
+        description: "These glasses will allow the most nihilistic parts of your soul to manifest on Twitter."
+      },
+      "circular": {
+        id: "circular",
+        name: "Circle Glasses",
+        cost: "$120.00",
+        description: "For all your worst tech movie needs."
+      },
+      "thin": {
+        id: "thin",
+        name: "Wire Frame Glasses",
+        cost: "$10.00",
         description: "These glasses will reflect the disappointment on your parents' faces right back at them."
       },
       "lipstick": {
         id: "lipstick",
-        name: "Kylie LipKit",
+        name: "Kylie's LipKit",
         cost: "$150.00",
-        description: "Unable to lie? Then use this lipstick to distract from the constant lip twitches."
+        description: "Unable to lie? Then use this lipstick to distract from the constant tics."
       },
       "baseball-cap": {
         id: "baseball-cap",
@@ -55,7 +73,15 @@ class ItemPage extends Component {
 
   getModal() {
     if (this.state.modalOpened) {
-      return <DemoModal key="modal" openClass="open" close={this.closeModal.bind(this)} />;
+      return (
+        <DemoModal
+          key="modal"
+          openClass="open"
+          type={this.state.item.id}
+          name={this.state.item.name}
+          close={this.closeModal.bind(this)}
+        />
+      );
     } else {
       return;
     }

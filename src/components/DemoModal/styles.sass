@@ -36,13 +36,14 @@
       position: fixed
       width: 100%
       z-index: 999
+      h3
 
     h3
       font-size: 1.3rem
       padding-bottom: .5rem
       border-bottom: solid 2px transparent
       text-align: center
-      padding: .7rem 1.5rem
+      padding: 1.5rem
       border-bottom: solid 2px $modal-border-color
       width: 100%
 
@@ -91,20 +92,36 @@
           position: relative;
           background: #fff
           color: #000
-        .snapshotBtnCircle
-          position: absolute
-          width: 50%
-          height: 50%
-          background-color: #000000
-          border-radius: 50%
-        .snapshotBtnSmallCircle
-          margin-top: 25%
-          margin-left: 25%
-          position: absolute
-          width: 50%
-          height: 50%
-          background-color: #e5e5e5
-          border-radius: 50%
+
+    .swatchWrapper
+      text-align: center
+      .swatch
+        height: 50px
+        width: 50px
+        display: inline-block
+        margin: 0 10px
+        &:hover
+          cursor: pointer
+      .active
+        border: 2px solid black
+      .black
+        background: #262323
+      .red
+        background: #ff4444
+      .blue
+        background: #4286f4
+      .pink
+        background: #ff5ee6
+      .green
+        background: #8eff5e
+      .yellow
+        background: #f1f442
+      .purple
+        background: #ac41f4
+      .orange
+        background: #f49241
+      .white
+        background: #fcf6f2
 
     .buttonWrapper
       display: flex

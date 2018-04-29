@@ -12,16 +12,34 @@ class Homepage extends Component {
   render() {
     const items = [
       {
-        id: "glasses",
-        name: "Aviator Glasses",
+        id: "demo",
+        name: "Demo Glasses",
         cost: "$40.00",
+        description: "These glasses will absorb the disappointment on your parents' faces so you never have to acknowledge your inferiority complex."
+      },
+      {
+        id: "kanye",
+        name: "Kanye Shades",
+        cost: "$340.00",
+        description: "These glasses will allow the most nihilistic parts of your soul to manifest on Twitter."
+      },
+      {
+        id: "circular",
+        name: "Circle Glasses",
+        cost: "$120.00",
+        description: "For all your worst tech movie needs."
+      },
+      {
+        id: "thin",
+        name: "Wire Frame Glasses",
+        cost: "$10.00",
         description: "These glasses will reflect the disappointment on your parents' faces right back at them."
       },
       {
         id: "lipstick",
-        name: "Kylie LipKit",
+        name: "Kylie's LipKit",
         cost: "$150.00",
-        description: "Unable to lie? Then use this lipstick to distract from the constant lip twitches."
+        description: "Unable to lie? Then use this lipstick to distract from the constant tics."
       },
       {
         id: "baseball-cap",
